@@ -1,14 +1,16 @@
 let n = 1000;
-let sum = 0;
-let quantity = 0;
+let prom = 0;
+let colIt = 0;
 
-for (let i = 0; i <= n; i++){
-    sum = n;
-    n /= 2 ;
-    if (n < 50) {
-        quantity = i;
-        break;
+for (let i = 0; i<1000; i++){
+    colIt = i;
+    prom = n;
+    n = n / 2;
+    
+
+    if (n < 50){
+        break
     }
 }
-console.log(sum)
-console.log(quantity)
+
+console.log(`Получилось такое число: ${prom} \nКоличество итераций: ${colIt}`)
